@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Social links profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="profile-container">
+        <img src="avatar-jessica.jpeg" alt="Jessica Randall" class="profile-pic">
+        <h1>Jessica Randall</h1>
+        <p class="location">London, United Kingdom</p>
+        <p class="description">"Front-end developer and avid reader."</p>
+        
+        <div class="social-links">
+            <a href="#" class="btn">GitHub</a>
+            <a href="#" class="btn">Frontend Mentor</a>
+            <a href="#" class="btn">LinkedIn</a>
+            <a href="#" class="btn">Twitter</a>
+            <a href="#" class="btn">Instagram</a>
+        </div>
+    </div>
+
+<div class="dialog-box hidden" id="dialog">
+    <div class="dialog-content">
+        <h2>Pilih Opsi Anda</h2>
+        <p class="dialog-text">Silakan pilih salah satu opsi di bawah ini:</p>
+        <button id="close-dialog" class="btn">Tutup</button>
+        <button id="read-me" class="btn">Baca README</button>
+        <button id="go-to-site" class="btn">Kunjungi Instagram saya</button>
+        <div class="checkmark hidden" id="checkmark">&#10003;</div> <!-- Ceklis -->
+    </div>
+</div>
+<!-- Gelembung untuk menampilkan pilihan -->
+<div id="bubble" class="bubble hidden"></div>
+    <script src="script.js"></script> <!-- Menyertakan file JavaScript -->
+</body>
+</html>
